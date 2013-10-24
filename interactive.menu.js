@@ -1,10 +1,11 @@
 jQuery.fn.interactiveMenu = function() {
     function a() {
         var windowTop = $(window).scrollTop();
-        var page = $('#content').offset().top;
+        var page = $('#page1').offset().top;
+        console.log(page);
         if (windowTop > page) {
-            $("#navigation li a").removeClass("active");
-            $('a[href="#page"]').addClass("active");
+            $("#interactive-menu li a").removeClass("active");
+            $('a[href="#page1"]').addClass("active");
         }
     }
     $(function(){

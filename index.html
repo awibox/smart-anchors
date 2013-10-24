@@ -8,18 +8,23 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="interactive.menu.js"></script>
+    <script>
+        jQuery.fn.interactiveMenu();
+    </script>
 </head>
 <body>
+<div class="paging">
+    <ul id="interactive-menu">
+        <li class="li"><a href="#page1">Page 1</a></li>
+        <li class="li"><a href="#page2">Page 2</a></li>
+        <li class="li"><a href="#page3">Page 3</a></li>
+        <li class="li"><a href="#page4">Page 4</a></li>
+        <li class="li"><a href="#page5">Page 5</a></li>
+    </ul>
+</div>
 <div id="wrapper">
-    <div class="paging">
-        <ul id="navigation">
-            <li class="li"><a href="#page1">Page 1</a></li>
-            <li class="li"><a href="#page2">Page 2</a></li>
-            <li class="li"><a href="#page3">Page 3</a></li>
-            <li class="li"><a href="#page4">Page 4</a></li>
-            <li class="li"><a href="#page5">Page 5</a></li>
-        </ul>
-    </div>
     <header id="header">
 
     </header><!-- #header-->

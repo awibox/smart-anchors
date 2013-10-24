@@ -20,3 +20,17 @@ input[type=submit]::-moz-focus-inner{padding:0;border:0}
     background: #ddd;
     margin-bottom: 20px;
 }
+#interactive-menu {
+    position: fixed;
+    top: 150px;
+    left: 100px;
+    list-style: none;
+}
+#interactive-menu li a {
+    font-size: 16px;
+    display: block;
+    padding: 5px 0;
+}
+#interactive-menu li a.active {
+    font-weight: bold;
+}
