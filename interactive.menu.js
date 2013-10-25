@@ -1,11 +1,10 @@
 (function( $ ) {
-    jQuery.fn.interactiveMenu = function() {
-        var d = $(this);
-        var paddingTop = 100;
-        console.log(d);
+    jQuery.fn.interactiveMenu = function(padding) {
+        var d = this.selector;
+        var paddingTop = padding;
         function с() {
             var windowTop = $(window).scrollTop();
-            var menuItems = $("#interactive-menu li a");
+            var menuItems = $(d).find("a");
             var page;
             for (var i= 0, size = menuItems.length; i<size; i++) {
                 var b = menuItems.eq(i).attr("href");
