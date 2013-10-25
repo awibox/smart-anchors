@@ -1,33 +1,28 @@
 (function( $ ) {
     jQuery.fn.interactiveMenu = function() {
-
-
-        function a() {
-            var interactiveMenu = $("#interactive-menu li a");
-            var liLength = interactiveMenu.length;
-
+        function с() {
             var windowTop = $(window).scrollTop();
-
-            var a = [];
-
-
-            for (var i=0; i<5; i++) {
-                var b = $("#interactive-menu li a").eq(i).attr("href");
-                console.log(b);
+            var menuItems = $("#interactive-menu li a");
+            var a = [], page;
+            for (var i= 0, size = menuItems.length; i<size; i++) {
+                var b = menuItems.eq(i).attr("href");
                 a.push(b);
-
+                page = $(b).offset().top;
+                console.log(windowTop);
+                console.log(page);
+                if (windowTop > page) {
+                    $(this).addClass("active");
+                }
+                console.log(b);
             }
-            console.log(a);
+            console.log(size);
             $("#interactive-menu li a").removeClass("active");
 
-            var page = $('#page3').offset().top;
-            if (windowTop > page) {
 
-                $('a[href="#page3"]').addClass("active");
-            }
+
         }
         $(function(){
-            $(window).scroll(a);
+            $(window).scroll(с);
         });
     };
 })(jQuery);
