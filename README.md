@@ -1,4 +1,8 @@
-Interactive Menu
+FixedIN
 ================
 
-jQuery plugin - Fixed interactiv menu for scroll page.
+jQuery plugin - Fixed interactive navigation.
+jQuery плагин - Фиксированная интерактивная навигация.
+
+
+Плагин предназначен для осуществления навигации по странице, с отображением активного пункта в зависимости от месторасположения на странице.
