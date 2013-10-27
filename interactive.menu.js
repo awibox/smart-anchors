@@ -1,10 +1,10 @@
 (function( $ ) {
-    jQuery.fn.FixedIN = function(offset) {
-        var idFixedIN = this.selector;
+    jQuery.fn.fixedin = function(offset) {
+        var idFixedin = this.selector;
         var offsetTop = offset;
         function scrollPage() {
             var windowTop = $(window).scrollTop();
-            var navItems = $(idFixedIN).find("a");
+            var navItems = $(idFixedin).find("a");
             var page;
             for (var i= 0, size = navItems.length; i<size; i++) {
                 var itemContent = navItems.eq(i).attr("href");
@@ -16,6 +16,7 @@
             }
         }
         $(function(){
+            scrollPage();
             $(window).scroll(scrollPage);
         });
 
