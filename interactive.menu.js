@@ -1,5 +1,5 @@
 (function( $ ) {
-    jQuery.fn.fixedin = function(offset) {
+    jQuery.fn.FixedIN = function(offset) {
         var idFixedIN = this.selector;
         var offsetTop = offset;
         function scrollPage() {
@@ -16,8 +16,8 @@
             }
         }
         $(function(){
-            scrollPage();
             $(window).scroll(scrollPage);
         });
+
     };
 })(jQuery);
