@@ -2,15 +2,19 @@
     jQuery.fn.fixedin = function() {
         var idFixedin = this.selector;
         var offsetTop = 100;
+        var page,
+            itemContent,
+            itemContentHeight,
+            windowHeight,
+            itemOffset,
+            navItems,
+            windowTop,
+            i;
         function scrollPage() {
-            var windowTop = $(window).scrollTop();
-            var page;
-            var itemContentHeight;
-            var windowHeight;
-            var itemOffset;
-            var navItems = $(idFixedin).find("a");
-            for (var i= 0, size = navItems.length; i<size; i++) {
-                var itemContent = navItems.eq(i).attr("href");
+            windowTop = $(window).scrollTop();
+            navItems = $(idFixedin).find("a");
+            for (i= 0, size = navItems.length; i<size; i++) {
+                itemContent = navItems.eq(i).attr("href");
                 page = $(itemContent).offset().top - offsetTop;
                 itemContentHeight = $(itemContent).height();
                 windowHeight = $(window).height();
