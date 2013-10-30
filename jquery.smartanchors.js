@@ -7,7 +7,7 @@
  *
  * Licensed under the MIT license.
  *
- * $('nav_id').smartanchors(offset, speed);
+ * $('nav_id').smartanchors(speed);
  */
 (function($) {
     jQuery.fn.smartanchors = function(speed) {
