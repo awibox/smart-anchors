@@ -38,6 +38,11 @@
             scrollPage();
             $(window).scroll(scrollPage);
             $(window).resize(scrollPage);
+            navItems.click(function(){
+                b = $(this).attr("href");
+                c = $(b).offset().top;
+                $('html,body').animate ({scrollTop: c},1000)
+            });
         });
     };
 })(jQuery);
