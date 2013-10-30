@@ -1,5 +1,5 @@
-(function( $ ) {
-    jQuery.fn.smartAnchors = function(speed) {
+(function($) {
+    jQuery.fn.smartanchors = function(speed) {
         var idFixedin = this.selector;
         var offsetTop = 100;
         var page,
@@ -40,9 +40,9 @@
             $(window).resize(scrollPage);
             navItems.click(function(){
                 event.preventDefault();
-                b = $(this).attr("href");
-                c = $(b).offset().top;
-                $('html,body').animate ({scrollTop: c},speed)
+                var itemBlock = $(this).attr("href");
+                var itemBlockScroll = $(itemBlock).offset().top;
+                $('html,body').animate ({scrollTop: itemBlockScroll},speed)
             });
         });
     };
