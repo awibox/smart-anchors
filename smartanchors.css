@@ -1,14 +1,14 @@
-#interactive-menu {
+#navigation {
     position: fixed;
     top: 150px;
     left: 100px;
     list-style: none;
 }
-#interactive-menu li a {
+#navigation li a {
     font-size: 16px;
     display: block;
     padding: 5px 0;
 }
-#interactive-menu li a.active {
+#navigation li a.active {
     font-weight: bold;
 }

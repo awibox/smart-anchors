@@ -1,5 +1,5 @@
 (function( $ ) {
-    jQuery.fn.fixedin = function(speed) {
+    jQuery.fn.smartAnchors = function(speed) {
         var idFixedin = this.selector;
         var offsetTop = 100;
         var page,
