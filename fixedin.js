@@ -39,6 +39,7 @@
             $(window).scroll(scrollPage);
             $(window).resize(scrollPage);
             navItems.click(function(){
+                event.preventDefault();
                 b = $(this).attr("href");
                 c = $(b).offset().top;
                 $('html,body').animate ({scrollTop: c},speed)
