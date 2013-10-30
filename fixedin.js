@@ -1,5 +1,5 @@
 (function( $ ) {
-    jQuery.fn.fixedin = function() {
+    jQuery.fn.fixedin = function(speed) {
         var idFixedin = this.selector;
         var offsetTop = 100;
         var page,
@@ -41,7 +41,7 @@
             navItems.click(function(){
                 b = $(this).attr("href");
                 c = $(b).offset().top;
-                $('html,body').animate ({scrollTop: c},1000)
+                $('html,body').animate ({scrollTop: c},speed)
             });
         });
     };
