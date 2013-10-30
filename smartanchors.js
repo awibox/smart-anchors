@@ -1,3 +1,14 @@
+/*
+ * SmartAnchors
+ * http://github.com/awibox/SmartAnchors
+ *
+ * Author: Andrey Arkhipov
+ * http://awibox.ru
+ *
+ * Licensed under the MIT license.
+ *
+ * $('nav_id').smartanchors(speed);
+ */
 (function($) {
     jQuery.fn.smartanchors = function(speed) {
         var idFixedin = this.selector;
@@ -19,19 +30,27 @@
                 itemContentHeight = $(itemContent).height();
                 windowHeight = $(window).height();
                 itemOffset = windowHeight - itemContentHeight;
-                if(itemOffset>offsetTop) {
+
+                if(itemOffset<offsetTop) {
                     page = $(itemContent).offset().top - itemOffset;
-                    if(navItems.length-1 == i) {
-                        page = $(itemContent).offset().top - offsetTop - itemOffset;
-                    }
                 } else {
                     page = $(itemContent).offset().top - offsetTop;
                 }
-                $(itemContent).css('min-height', windowHeight/1.5)
+                if(navItems.length-1 == i) {
+                    page = $(itemContent).offset().top - offsetTop - itemOffset;
+                    $(itemContent).css('min-height', windowHeight/1.5)
+                }
+                if(navItems.length-2 == i) {
+                    $(itemContent).css('min-height', windowHeight/1.5)
+                    console.log(windowHeight)
+                }
+
                 if (windowTop > page) {
                     navItems.removeClass("active");
                     navItems.eq(i).addClass("active");
                 }
+                console.log(windowTop);
+                console.log(page);
             }
         }
         $(function(){
