@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <title>SmartAnchors</title>
+    <title>jQuery SmartAnchors</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="smartanchors.css">
+    <link rel="stylesheet" type="text/css" href="jquery.smartanchors.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="jquery.smartanchors.js"></script>
     <script type="text/javascript">$('#navigation').smartanchors(1500);</script>
 </head>
 <body>
-<div class="paging">
+<div id="wrapper">
     <ul id="navigation">
         <li class="li"><a href="#page1">Page 1</a></li>
         <li class="li"><a href="#page2">Page 2</a></li>
@@ -24,11 +24,6 @@
         <li class="li"><a href="#page6">Page 6</a></li>
         <li class="li"><a href="#page7">Page 7</a></li>
     </ul>
-</div>
-<div id="wrapper">
-    <header id="header">
-
-    </header><!-- #header-->
     <div id="content">
         <div id="page1">
             <h2>Page 1</h2>
@@ -80,7 +75,6 @@
                 pariatur quibusdam! Inventore, omnis.</p>
         </div>
     </div><!-- #content-->
-
 </div><!-- #wrapper -->
 </body>
 </html>

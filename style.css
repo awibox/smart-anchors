@@ -57,13 +57,14 @@ input[type=submit]::-moz-focus-inner {
 }
 
 #wrapper {
-    width: 800px;
+    width: 960px;
     margin: 0 auto;
+    position: relative;
 }
 
 [id*=page] {
-    width: 100%;
     padding: 20px;
+    margin-left: 250px;
     min-height: 200px;
     background: #ddd;
     margin-bottom: 20px;
