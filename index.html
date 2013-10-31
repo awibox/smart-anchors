@@ -7,11 +7,17 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="jquery.smartanchors.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="jquery.smartanchors.js"></script>
-    <script type="text/javascript">$('#navigation').smartanchors(1500);</script>
+    <!-- SmartAnchors -->
+    <script type="text/javascript" src="jquery.smartanchors.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.smartanchors.css">
+    <script type="text/javascript">
+        $(function(){
+            $('#navigation').smartanchors(700);
+        });
+    </script>
+    <!-- end SmartAnchors -->
 </head>
 <body>
 <div id="wrapper">

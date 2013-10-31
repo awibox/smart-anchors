@@ -24,7 +24,6 @@
                     page = content.offset().top - offsetTop;
                     if(navItems.length-2 == i) {
                         content.css('min-height', windowHeight/1.5);
-                        console.log(windowHeight)
                     }
                     if(navItems.length-1 == i) {
                         page = content.offset().top - offsetTop - windowHeight + content.height();
