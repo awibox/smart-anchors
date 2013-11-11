@@ -1,6 +1,7 @@
 #navigation {
-    position: fixed;
+    float:left;
     top: 120px;
+    margin-top:300px;
     width: 210px;
     border: 2px solid #b2e7ff;
     list-style: none;
@@ -17,6 +18,10 @@
     -o-box-shadow: 0 2px 5px #b2b2b2;
     -khtml-box-shadow: 0 2px 5px #b2b2b2;
     box-shadow: 0 2px 5px #b2b2b2;
+}
+#navigation.fixed {
+    position: fixed;
+    margin-top:0;
 }
 #navigation li a {
     padding: 10px 20px;

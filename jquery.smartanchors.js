@@ -10,18 +10,21 @@
  * $('nav_id').smartanchors(speed);
  */
 (function($) {
-    jQuery.fn.smartanchors = function(speed) {
+    jQuery.fn.smartanchors = function(speed, fixedTop) {
         var me = this,
             scrollPage = function() {
                 var navItems = $(me).find('a'),
                     windowHeight = $(window).height(),
                     offsetTop = 100,
-                    page,
                     windowTop = $(window).scrollTop();
-
+                    $(me).removeClass("fixed");
+                if(windowTop>fixedTop) {
+                    $(me).addClass("fixed");
+                }
+                console.log(windowTop);
                 navItems.each(function(i){
                     var content = $($(this).attr("href"));
-                    page = content.offset().top - offsetTop;
+                    var page = content.offset().top - offsetTop;
                     if(navItems.length-2 == i) {
                         content.css('min-height', windowHeight/1.5);
                     }
