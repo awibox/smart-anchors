@@ -21,11 +21,11 @@ SmartAnchors предназначен для модификации навига
 Для работы необходимо подключить jquery и сам плагин jquery.smartanchors.js.
 
 Вызов функции:
-...
+```
 $(function(){
     $('#elementId').smartanchors(speed,fixedTop);
 });
-...
+```
 
 Параметры:
 speed - скорость анимации
