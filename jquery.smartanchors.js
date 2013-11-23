@@ -10,15 +10,15 @@
  * $('nav_id').smartanchors(speed);
  */
 (function($) {
-    jQuery.fn.smartanchors = function(speed, fixedTop) {
+    jQuery.fn.smartanchors = function(speed, addFixed, pagePadding) {
         var me = this,
             scrollPage = function() {
                 var navItems = $(me).find('a'),
                     windowHeight = $(window).height(),
-                    offsetTop = 100,
+                    offsetTop = 100+pagePadding,
                     windowTop = $(window).scrollTop();
                     $(me).removeClass("fixed");
-                if(windowTop>fixedTop) {
+                if(windowTop>addFixed) {
                     $(me).addClass("fixed");
                 }
                 console.log(windowTop);
@@ -44,7 +44,7 @@
         $(window).resize(scrollPage);
         $(this).find('a').click(function(ev){
             var hash = $(this).attr("href");
-            $('html,body').animate({scrollTop: $(hash).offset().top},speed);
+            $('html,body').animate({scrollTop: $(hash).offset().top-pagePadding},speed);
             return false;
         });
     };
