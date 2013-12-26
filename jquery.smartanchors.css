@@ -1,5 +1,4 @@
 #navigation {
-    list-style: none;
     background: #fff;
     -moz-box-shadow: 0 2px 5px #b2b2b2;
     -webkit-box-shadow: 0 2px 5px #b2b2b2;
@@ -7,8 +6,25 @@
     -o-box-shadow: 0 2px 5px #b2b2b2;
     -khtml-box-shadow: 0 2px 5px #b2b2b2;
     box-shadow: 0 2px 5px #b2b2b2;
-    width: 960px;
+    width: 100%;
     margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#navigation .carcas {
+    width: 960px;
+    margin: 0 auto;
+}
+#navigation .carcas .logo{
+    font-size: 28px;
+    padding: 20px;
+    text-align: center;
+}
+#navigation ul {
+    list-style: none;
+    text-align: center;
+    font-size: 0;
 }
 #navigation.fixed {
     position: fixed;
@@ -20,7 +36,7 @@
     display: block;
 }
 #navigation li {
-    float: left;
+    display: inline-block;
 }
 #navigation li a {
     padding: 10px 20px;
