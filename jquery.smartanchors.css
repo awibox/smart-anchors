@@ -1,35 +1,32 @@
 #navigation {
-    float:left;
-    top: 120px;
-    margin-top:300px;
-    width: 210px;
-    border: 2px solid #b2e7ff;
     list-style: none;
     background: #fff;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    border-radius: 5px;
     -moz-box-shadow: 0 2px 5px #b2b2b2;
     -webkit-box-shadow: 0 2px 5px #b2b2b2;
     -ms-box-shadow: 0 2px 5px #b2b2b2;
     -o-box-shadow: 0 2px 5px #b2b2b2;
     -khtml-box-shadow: 0 2px 5px #b2b2b2;
     box-shadow: 0 2px 5px #b2b2b2;
+    width: 960px;
+    margin-bottom: 20px;
 }
 #navigation.fixed {
     position: fixed;
     margin-top:0;
 }
+#navigation:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+#navigation li {
+    float: left;
+}
 #navigation li a {
     padding: 10px 20px;
     font-size: 14px;
-    width: 100%;
     color: #005e89;
     display: block;
-    border-top: 1px solid #b2e7ff;
     text-decoration: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
