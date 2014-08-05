@@ -63,12 +63,12 @@ input[type=submit]::-moz-focus-inner {
     background: #fff;
 }
 #page1 {
-    margin-top: 114px;
+    margin-top: 80px;
 }
 [id*=page] {
     padding: 20px;
     min-height: 200px;
-    background: #ddd;
+    background: #fff;
     margin-bottom: 20px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -83,7 +83,7 @@ input[type=submit]::-moz-focus-inner {
     -khtml-box-shadow: 0 2px 5px #b2b2b2;
     box-shadow: 0 2px 5px #b2b2b2;
 }
-#page2, #page6 {background:#e0fbfd;}
-#page3, #page7 {background:#e1ffa1;}
-#page4 {background:#b2e7ff;}
-#page5, #page1 {background:#ffe399;}
+/*#page2, #page6 {background:#e0fbfd;}*/
+/*#page3, #page7 {background:#e1ffa1;}*/
+/*#page4 {background:#b2e7ff;}*/
+/*#page5, #page1 {background:#ffe399;}*/

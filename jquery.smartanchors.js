@@ -7,7 +7,10 @@
  *
  * Licensed under the MIT license.
  *
- * $('nav_id').smartanchors(speed);
+ * $('nav_id').smartanchors(speed, addFixed, pagePadding);
+ * speed - скорость прокрутки
+ * addFixed - высота фиксирования (0 если всегда фиксируется)
+ * pagePadding - высота шапки сверху, если она фиксированная
  */
 (function($) {
     jQuery.fn.smartanchors = function(speed, addFixed, pagePadding) {
@@ -21,7 +24,6 @@
                 if(windowTop>addFixed) {
                     $(me).addClass("fixed");
                 }
-                console.log(windowTop);
                 navItems.each(function(i){
                     var content = $($(this).attr("href"));
                     var page = content.offset().top - offsetTop;
