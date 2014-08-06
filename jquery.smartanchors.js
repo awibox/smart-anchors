@@ -16,13 +16,17 @@
     jQuery.fn.smartanchors = function(speed, addFixed, pagePadding) {
         var me = this,
             scrollPage = function() {
-                var navItems = $(me).find('a'),
+                var navItems = $(me).find('.b-smart-anchors__navi-item-link'),
                     windowHeight = $(window).height(),
                     offsetTop = 100+pagePadding,
                     windowTop = $(window).scrollTop();
-                    $(me).removeClass("fixed");
-                if(windowTop>addFixed) {
-                    $(me).addClass("fixed");
+
+
+                if(addFixed !== 0) {
+                    $(me).removeClass("b-smart-anchors__navi_fixed");
+                    if(windowTop>addFixed) {
+                        $(me).addClass("b-smart-anchors__navi_fixed");
+                    }
                 }
                 navItems.each(function(i){
                     var content = $($(this).attr("href"));
@@ -35,8 +39,8 @@
                         content.css('min-height', windowHeight/1.5)
                     }
                     if (windowTop > page) {
-                        navItems.removeClass("active");
-                        $(this).addClass("active");
+                        navItems.removeClass("b-smart-anchors__navi-item-link_active");
+                        $(this).addClass("b-smart-anchors__navi-item-link_active");
                     }
                 });
             };

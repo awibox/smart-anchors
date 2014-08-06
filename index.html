@@ -10,60 +10,71 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <!-- SmartAnchors -->
-    <script type="text/javascript" src="jquery.smartanchors.min.js"></script>
+    <script type="text/javascript" src="jquery.smartanchors.js"></script>
     <link rel="stylesheet" type="text/css" href="jquery.smartanchors.css">
     <script type="text/javascript">
         $(function(){
-            $('#navigation').smartanchors(700,100,80);
+            $('.b-smart-anchors__navi').smartanchors(700,0,75);
         });
     </script>
     <!-- end SmartAnchors -->
 </head>
 <body>
-<div id="wrapper">
-    <div id="navigation">
-        <div class="carcas">
-            <div class="logo">
+<div class="b-smart-anchors b-wrapper">
+    <div class="b-smart-anchors__navi">
+        <div class="b-wrapper">
+            <div class="b-smart-anchors__logo">
                 Smart Anchors
             </div>
-            <ul>
-                <li class="li"><a href="#page1">О плагине</a></li>
-                <li class="li"><a href="#page2">Загрузить</a></li>
-                <li class="li"><a href="#page3">Подключение</a></li>
-                <li class="li"><a href="#page4">Настройки</a></li>
-                <li class="li"><a href="#page5">О разработке</a></li>
+            <ul class="b-smart-anchors__navi-list">
+                <li class="b-smart-anchors__navi-item">
+                    <a class="b-smart-anchors__navi-item-link" href="#page1">О плагине</a>
+                </li>
+                <li class="b-smart-anchors__navi-item">
+                    <a class="b-smart-anchors__navi-item-link" href="#page2">Загрузить</a>
+                </li>
+                <li class="b-smart-anchors__navi-item">
+                    <a class="b-smart-anchors__navi-item-link" href="#page3">Подключение</a>
+                </li>
+                <li class="b-smart-anchors__navi-item">
+                    <a class="b-smart-anchors__navi-item-link" href="#page4">Настройки</a>
+                </li>
+                <li class="b-smart-anchors__navi-item">
+                    <a class="b-smart-anchors__navi-item-link" href="#page5">О разработке</a>
+                </li>
             </ul>
+
         </div>
     </div>
 
-    <div id="content">
-        <div id="page1">
+    <div class="b-content">
+        <div class="b-content__item" id="page1">
             <h2>О плагине</h2>
 
             <p>SmartAnchors предназначен для модификации навигации по якорям.</p>
         </div>
-        <div id="page2">
+        <div class="b-content__item" id="page2">
             <h2>Загрузить</h2>
 
             <p>A, ad corporis deleniti doloremque ea exercitationem odio, porro quaerat quasi quis soluta tempore
                 temporibus totam! Assumenda dignissimos dolore doloremque eligendi exercitationem hic in maxime mollitia
                 pariatur quibusdam! Inventore, omnis.</p>
         </div>
-        <div id="page3">
+        <div class="b-content__item" id="page3">
             <h2>Подключение</h2>
 
             <p>Accusamus ad adipisci aliquam animi, blanditiis consequatur dolorem doloremque dolorum ea earum expedita
                 fugiat iste minima molestias nulla odit optio perferendis possimus quam sapiente suscipit velit
                 veritatis vitae voluptate voluptatum!</p>
         </div>
-        <div id="page4">
+        <div class="b-content__item" id="page4">
             <h2>Настройки</h2>
 
             <p>Amet aspernatur culpa eos facere ipsa ipsum, itaque nam, perferendis qui ratione unde veniam! Ab dicta
                 dolore harum hic id natus pariatur, praesentium quis quisquam quos, repellendus tempora temporibus
                 vel.</p>
         </div>
-        <div id="page5">
+        <div class="b-content__item" id="page5">
             <h2>О разработке</h2>
 
             <p>Autem blanditiis cumque distinctio ducimus earum esse est eum facilis ipsa, magni natus nesciunt officiis

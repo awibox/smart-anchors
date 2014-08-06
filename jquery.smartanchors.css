@@ -1,4 +1,4 @@
-#navigation {
+.b-smart-anchors__navi {
     background: #fff;
     -moz-box-shadow: 0 2px 5px #b2b2b2;
     -webkit-box-shadow: 0 2px 5px #b2b2b2;
@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
 }
-#navigation.fixed {
+.b-smart-anchors__navi_fixed {
     position: fixed;
     margin-top:0;
 }
@@ -25,28 +25,23 @@
     width: 960px;
     margin: 0 auto;
 }
-#navigation .carcas:after {
-    clear:both;
-    display: block;
-    content: "";
-}
-#navigation .carcas .logo{
+.b-smart-anchors__logo{
     font-size: 28px;
     padding: 20px;
     float: left;
 }
-#navigation ul {
+.b-smart-anchors__navi-list {
     list-style: none;
     float: right;
     font-size: 0;
-    height: 100%;
+    padding: 11px;
 }
 
-#navigation li {
+.b-smart-anchors__navi-item {
     display: inline-block;
     vertical-align: middle;
 }
-#navigation li a {
+.b-smart-anchors__navi-item-link {
     padding: 10px 20px;
     font-size: 14px;
     color: #005e89;
@@ -56,12 +51,12 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-#navigation li:first-child a {
+.b-smart-anchors__navi-item:first-child a {
     border-top: none;
 }
-#navigation li a:hover {
+.b-smart-anchors__navi-item-link:hover {
     background: #e0fbfd;
 }
-#navigation li a.active {
+.b-smart-anchors__navi-item-link_active {
     background: #b2e7ff;
 }
